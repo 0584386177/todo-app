@@ -1,0 +1,107 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.form-create{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    place-items: center;
+    visibility:hidden;
+    z-index: 999999;
+}
+.form-create.active{
+  visibility: visible;
+}
+.form-create.hidden{
+  visibility: hidden;
+}
+
+.form-create-content{
+    width: 400px;
+    height: 200px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #eee;
+    line-height: 3rem;
+    padding: 0 50px;
+    border-radius: 5px;
+}
+
+.form-create_title{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.form_create_input{
+    width: 100%;
+    height: 40px;
+    padding: 0px 5px;
+    border : 1px solid #999;
+}
+
+.create-features{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+.create-features *{
+    width: 120px;
+    color: white;
+    font-size:17px;
+    font-weight: 500;
+    border-radius: 3px;
+}
+.create-features .btn-createForm{
+    background-color: rgb(29, 162, 250);
+}
+
+.create-features .btn-closeForm{
+    background-color: #999;
+    
+}
